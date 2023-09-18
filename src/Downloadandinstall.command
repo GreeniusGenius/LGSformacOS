@@ -32,7 +32,6 @@ else
     open -a /Applications/LGS.app
     echo "It worked!"
 fi
-done
 
     
     
