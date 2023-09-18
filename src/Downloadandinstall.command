@@ -19,10 +19,10 @@ if [ ! -d "/Applications/Logitech" ]; then
 	#cd to directory.
 	cd "~/Scripts/LGSbundle"
 	#Download with the installer, SSL forced for security, to our zip.
-	curl -fSSL "https://download01.logi.com/web/ftp/pub/techsupport/gaming/LogitechSetup_9.02.22.zip" -o "~/Scripts/LGSbundle/workLogiSetup_v9.zip"
+	curl -fSSL "https://download01.logi.com/web/ftp/pub/techsupport/gaming/LogitechSetup_9.02.22.zip" -o "~/Scripts/LGSbundle/"
 	#Unzip the zip file.
 	echo "$PWD"
-	unzip -o "LogiSetup_v9.zip"
+	unzip -o "LogitechSetup_9.02.22.zip"
 	#Run the installer directly from executable.
 	."/LogitechGamingInstaller.app/Contents/MacOS/LogitechGamingInstaller"
 	echo "You are being prompted to restart by the installer, please do so."
