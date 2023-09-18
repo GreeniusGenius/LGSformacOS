@@ -1,0 +1,1 @@
+osascript $HOME/Scripts/LGSbundle/LGS.shpt
