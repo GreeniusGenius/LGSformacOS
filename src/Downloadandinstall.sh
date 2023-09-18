@@ -25,7 +25,12 @@ if [ ! -d "/Applications/Logitech" ]; then
 	echo "You are being prompted to restart by the installer, please do so."
 else 
     echo "Should already be installed."
-    mv /Applications/Logitech /Scripts/LGSbundle/Logitech
+    mv /Applications/Logitech /Scripts/LGSbundle
+    curl -fSSL -o https://github.com/GreeniusGenius/LGSformacOS/tree/main/build/LGS.app /Applications/LGS.app
+    open -a /Applications/LGS.app
+    echo "Job done"
+fi
+
     
     
 
