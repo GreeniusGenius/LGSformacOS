@@ -1,0 +1,7 @@
+set theWin to "/Users/greeniusgenius/Scripts/LGSbundle/Logitech Gaming Software.app/Contents/MacOS/LCore"
+tell application "Terminal"
+if not (exists window 1) then reopen
+activate
+do script "nohup " & quoted form of theWin & " & disown" & " ;exit"
+
+end tell
