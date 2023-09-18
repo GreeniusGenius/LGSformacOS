@@ -12,6 +12,8 @@ else
 	mkdir LGSbundle
 fi
 
+echo "Directory have been processed."
+
 if [ ! -d "/Applications/Logitech" ]; then
 	echo "Need to run installation scripts."
 	#cd to directory.
@@ -24,11 +26,11 @@ if [ ! -d "/Applications/Logitech" ]; then
 	zsh "LogitechGamingInstaller.app/Contents/MacOS/LogitechGamingInstaller") & echo "installed" > progress.txt
 	echo "You are being prompted to restart by the installer, please do so."
 else 
-    echo "Should already be installed."
+    echo "LGS Installer has already succeeded, we will now move folders appropriately."
     mv /Applications/Logitech /Scripts/LGSbundle
     curl -fSSL -o https://github.com/GreeniusGenius/LGSformacOS/tree/main/build/LGS.app /Applications/LGS.app
     open -a /Applications/LGS.app
-    echo "Job done"
+    echo "It worked!"
 fi
 
     
