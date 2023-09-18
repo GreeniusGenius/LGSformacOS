@@ -17,7 +17,7 @@ echo "Directory have been processed."
 if [ ! -d "/Applications/Logitech" ]; then
 	echo "Need to run installation scripts."
 	#cd to directory.
-	cd "/Users/$HOME/Scripts/LGSbundle"
+	cd "$HOME/Scripts/LGSbundle"
 	#Download with the installer, SSL forced for security, to our zip.
 	curl -fSSL "https://download01.logi.com/web/ftp/pub/techsupport/gaming/LogitechSetup_9.02.22.zip" -o "/Users/$HOME/Scripts/LGSbundle/LogitechSetup_9.02.22.zip"
 	#Unzip the zip file.
@@ -26,8 +26,8 @@ if [ ! -d "/Applications/Logitech" ]; then
 	
 	unzip -o "LogitechSetup_9.02.22.zip"
 	#Run the installer directly from executable.
-	chmod +x /Users/$HOME/Scripts/LGSbundle/LogitechGamingInstaller.app/Contents/MacOS/LogitechGamingInstaller
-	./Users/$HOME/Scripts/LGSbundle/LogitechGamingInstaller.app/Contents/MacOS/LogitechGamingInstaller
+	chmod +x $HOME/Scripts/LGSbundle/LogitechGamingInstaller.app/Contents/MacOS/LogitechGamingInstaller
+	.$HOME/Scripts/LGSbundle/LogitechGamingInstaller.app/Contents/MacOS/LogitechGamingInstaller
 	echo "You are being prompted to restart by the installer, please do so."
 else 
     echo "LGS Installer has already succeeded, we will now move folders appropriately."
