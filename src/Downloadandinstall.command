@@ -31,7 +31,7 @@ if [ ! -d "/Applications/Logitech" ]; then
 	echo "You are being prompted to restart by the installer, please do so."
 else 
     echo "LGS Installer has already succeeded, we will now move folders appropriately."
-    cp "/Applications/Logitech/*" "$HOME/Scripts/LGSbundle"s
+    cp -r "/Applications/Logitech/*" "$HOME/Scripts/LGSbundle"s
     curl -fSSL "https://raw.githubusercontent.com/GreeniusGenius/LGSformacOS/tree/43174ba89f84a6383083c51361600db5ad4bd073/build/LGS.app" -o "/Applications/LGS.app"
     open -a "Applications/LGS.app"
     echo "It worked!"
