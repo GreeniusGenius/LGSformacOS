@@ -21,7 +21,8 @@ if [ ! -d "/Applications/Logitech" ]; then
 	#Download with the installer, SSL forced for security, to our zip.
 	curl -fSSL "https://download01.logi.com/web/ftp/pub/techsupport/gaming/LogitechSetup_9.02.22.zip" -o "/Users/$HOME/Scripts/LGSbundle"
 	#Unzip the zip file.
-	echo "$PWD"
+	echo "$PWD is working directory."
+	echo "$HOME is home directory."
 	unzip -o "LogitechSetup_9.02.22.zip"
 	#Run the installer directly from executable.
 	."/LogitechGamingInstaller.app/Contents/MacOS/LogitechGamingInstaller"
