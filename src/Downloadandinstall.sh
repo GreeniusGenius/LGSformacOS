@@ -12,9 +12,7 @@ else
 	mkdir LGSbundle
 fi
 
-grep -Fxq "installed" "Scripts/LGSbundle/progress.txt"
-exit_status=$?
-if [$exit_status -eq 0]; then
+if [ ! -d "/Applications/Logitech" ]; then
 	echo "Need to run installation scripts."
 	#cd to directory.
 	cd Scripts/LGSbundle
@@ -25,10 +23,10 @@ if [$exit_status -eq 0]; then
 	#Run the installer directly from executable, and then immediately update the progress file, as the wait command wouldn't work, due to the installer still being open when prompted to restart.
 	zsh "LogitechGamingInstaller.app/Contents/MacOS/LogitechGamingInstaller") & echo "installed" > progress.txt
 	echo "You are being prompted to restart by the installer, please do so."
-if [ $exit_status -eq 1 ]; then
-    echo "blah blah blah"
-    /Applications/Logitech/Logitech Gaming Software.app
-
+else 
+    echo "Should already be installed."
+    mv /Applications/Logitech /Scripts/LGSbundle/Logitech
+    
 
 
 
