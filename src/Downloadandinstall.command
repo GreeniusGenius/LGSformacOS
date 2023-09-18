@@ -21,7 +21,7 @@ if [ ! -d "/Applications/Logitech" ]; then
 	#Download with the installer, SSL forced for security, to our zip
 	curl -fSSL "https://download01.logi.com/web/ftp/pub/techsupport/gaming/LogitechSetup_9.02.22.zip" -o "LogiSetup_v9.zip"
 	#Unzip the zip file.
-	unzip LogiSetup_v9.zip
+	unzip -o LogiSetup_v9.zip 
 	#Run the installer directly from executable, and then immediately update the progress file, as the wait command wouldn't work, due to the installer still being open when prompted to restart.
 	zsh "LogitechGamingInstaller.app/Contents/MacOS/LogitechGamingInstaller"
 	echo "You are being prompted to restart by the installer, please do so."
