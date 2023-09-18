@@ -19,7 +19,7 @@ if [ ! -d "/Applications/Logitech" ]; then
 	#cd to directory.
 	cd "$HOME/Scripts/LGSbundle"
 	#Download with the installer, SSL forced for security, to our zip.
-	curl -fSSL "https://download01.logi.com/web/ftp/pub/techsupport/gaming/LogitechSetup_9.02.22.zip" -o "/Users/$HOME/Scripts/LGSbundle/LogitechSetup_9.02.22.zip"
+	curl -fSSL "https://download01.logi.com/web/ftp/pub/techsupport/gaming/LogitechSetup_9.02.22.zip" -o "$HOME/Scripts/LGSbundle/LogitechSetup_9.02.22.zip"
 	#Unzip the zip file.
 	echo "$PWD is working directory."
 	echo "$HOME is home directory."
