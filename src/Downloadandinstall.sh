@@ -27,6 +27,7 @@ else
     echo "Should already be installed."
     mv /Applications/Logitech /Scripts/LGSbundle/Logitech
     
+    
 
 
 
