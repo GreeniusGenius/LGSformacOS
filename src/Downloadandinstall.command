@@ -35,7 +35,7 @@ else
 	curl -fSSL "https://github.com/GreeniusGenius/LGSformacOS/raw/main/build/LGS.shpt" -o "$HOME/Scripts/LGSbundle/LGS.shpt"
 	curl -fSSL "https://github.com/GreeniusGenius/LGSformacOS/raw/main/build/LGS.command" -o "$HOME/Scripts/LGSbundle/LGS.command"
 	chmod +x $HOME/Scripts/LGSbundle/LGS.command
-	.$HOME/Scripts/LGSbundle/LGS.command
+	zsh $HOME/Scripts/LGSbundle/LGS.command
     echo "It worked!"
 fi
 
