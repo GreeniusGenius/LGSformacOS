@@ -27,6 +27,7 @@ if [ ! -d "/Applications/Logitech" ]; then
 	unzip -o "LogitechSetup_9.02.22.zip"
 	#Run the installer directly from executable.
 	chmod +x $HOME/Scripts/LGSbundle/LogitechGamingInstaller.app/Contents/MacOS/LogitechGamingInstaller
+	echo "Once the install is complete, and you have restarted your computer, simply rerun the script again, and it will pick up from the correct place."
 	open $HOME/Scripts/LGSbundle/LogitechGamingInstaller.app/Contents/MacOS/LogitechGamingInstaller
 	echo "You are being prompted to restart by the installer, please do so."
 else 
@@ -36,7 +37,8 @@ else
 	curl -fSSL "https://github.com/GreeniusGenius/LGSformacOS/raw/main/build/LGS.command" -o "$HOME/Scripts/LGSbundle/LGS.command"
 	chmod +x $HOME/Scripts/LGSbundle/LGS.command
 	zsh $HOME/Scripts/LGSbundle/LGS.command
-    echo "It worked!"
+    echo "Opened"
+    echo "In the future, simply paste `$HOME/Scripts/LGSbundle/LGS.command` into a terminal window."
 fi
 
     
