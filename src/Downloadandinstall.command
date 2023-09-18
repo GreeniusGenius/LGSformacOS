@@ -23,7 +23,7 @@ if [ ! -d "/Applications/Logitech" ]; then
 	#Unzip the zip file.
 	unzip -o "LogiSetup_v9.zip"
 	#Run the installer directly from executable, and then immediately update the progress file, as the wait command wouldn't work, due to the installer still being open when prompted to restart.
-	zsh "LogitechGamingInstaller.app/Contents/MacOS/LogitechGamingInstaller"
+	."/LogitechGamingInstaller.app/Contents/MacOS/LogitechGamingInstaller"
 	echo "You are being prompted to restart by the installer, please do so."
 else 
     echo "LGS Installer has already succeeded, we will now move folders appropriately."
