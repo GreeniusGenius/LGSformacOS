@@ -17,9 +17,9 @@ echo "Directory have been processed."
 if [ ! -d "/Applications/Logitech" ]; then
 	echo "Need to run installation scripts."
 	#cd to directory.
-	cd "~/Scripts/LGSbundle"
+	cd "/Users/$HOME/Scripts/LGSbundle"
 	#Download with the installer, SSL forced for security, to our zip.
-	curl -fSSL "https://download01.logi.com/web/ftp/pub/techsupport/gaming/LogitechSetup_9.02.22.zip" -o "~/Scripts/LGSbundle/"
+	curl -fSSL "https://download01.logi.com/web/ftp/pub/techsupport/gaming/LogitechSetup_9.02.22.zip" -o "/Users/$HOME/Scripts/LGSbundle"
 	#Unzip the zip file.
 	echo "$PWD"
 	unzip -o "LogitechSetup_9.02.22.zip"
