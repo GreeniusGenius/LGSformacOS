@@ -1,5 +1,5 @@
 # LGSformacOS
-Allows Logitech Gaming Software to easily run on modern versions of macOS.
+Allows Logitech Gaming Software to easily run on modern versions of macOS.(Tested on macOS Sonoma RC)
 
 **Instructions**
 Open Terminal (Applications > Utilities > Terminal).
